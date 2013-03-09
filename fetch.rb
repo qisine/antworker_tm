@@ -77,7 +77,7 @@ end
 def go(opts = {})
   outfile = opts[:outfile] || "output.csv"
   puts "saving output to [#{outfile}]"
-  (1..58).to_a.each do |n|
+  (12..58).to_a.each do |n|
     links = SI::fetch_links(n) rescue []
     links.each do |l|
       arr = SI::fetch_page(l) rescue []
